@@ -104,7 +104,8 @@ body {
   border: 2px solid black;
   background-color: black;
   padding: 20px 45px;
-  margin: 0 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -381,4 +382,5 @@ footer img {
     text-align: center;
   }
 }
+
 /*# sourceMappingURL=index.css.map */
