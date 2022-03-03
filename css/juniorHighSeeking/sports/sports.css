@@ -123,35 +123,66 @@ footer img {
 }
 
 @media screen and (max-width: 1200px) {
-  .header .menu li {
-    margin-right: 50px;
-  }
-  .header .menu li a {
-    font-size: 14px;
-  }
+    .header {
+        & .menu {
+            & li {
+                margin-right: 50px;
+                & a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }    
 }
-
 @media screen and (max-width: 950px) {
-  .header > a {
-    margin-left: 2%;
-  }
-  .header > a img {
-    height: 30px;
-  }
-  .header .menu li {
-    margin-right: 20px;
-  }
+    .header {
+        & > a {
+            margin-left: 2%;
+            & img {
+                height: 30px;
+            }
+        }
+        & .menu {
+            & li {
+                margin-right: 20px; 
+            }
+        }    
+    }    
+    .container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 800px) {
-  .header > a {
-    margin-left: 5%;
-  }
-  .header > a img {
-    height: 40px;
-  }
-  .header .menu {
-    display: none;
-  }
+    .header {
+        & > a {
+            margin-left: 5%;
+            & img {
+                height: 40px;
+            }
+        }
+        & .menu {
+            display: none;
+        }
+    }    
+    .container {
+        & h2 {
+            font-size: 18px;
+        }
+        & table {
+            & th, td {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        & table {
+            & th, td {
+                font-size: 12px;
+            }
+        }
+    }
 }
 /*# sourceMappingURL=sports.css.map */
