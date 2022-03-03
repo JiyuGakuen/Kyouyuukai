@@ -275,6 +275,31 @@ footer img {
   height: 40px;
 }
 
+.responsibleContents {
+  width: 90%;
+  margin: 200px auto;
+  background-color: white;
+  padding: 10px 20px;
+  display: none;
+}
+
+.responsibleContents h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.responsibleContents h4 {
+  font-size: 20px;
+  border-bottom: 2px solid #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.responsibleContents p {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
 @media screen and (max-width: 1200px) {
   .header .menu li {
     margin-right: 50px;
@@ -316,4 +341,14 @@ footer img {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .table-wrapper {
+    display: none;
+  }
+  .responsibleContents {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=symbiosis.css.map */
