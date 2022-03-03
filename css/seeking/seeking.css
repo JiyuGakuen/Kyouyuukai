@@ -100,13 +100,13 @@ body {
 }
 
 .container .juniorHigh {
-  background-image: url(/image/scene/scene3.jpg);
+  background-image: url(https://github.com/JiyuGakuen/Kyouyuukai/blob/main/image/scene/scene3.jpg?raw=true);
   background-size: cover;
   margin-right: 50px;
 }
 
 .container .high {
-  background-image: url(/image/scene/scene15.jpg);
+  background-image: url(https://github.com/JiyuGakuen/Kyouyuukai/blob/main/image/scene/scene15.jpg?raw=true);
   background-size: cover;
 }
 
