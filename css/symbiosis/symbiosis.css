@@ -244,6 +244,11 @@ body {
   background-color: white;
 }
 
+.table-wrapper h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+
 .table-wrapper table {
   width: 80%;
   border-collapse: collapse;
@@ -342,7 +347,7 @@ footer img {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 00px) {
   .table-wrapper {
     display: none;
   }
