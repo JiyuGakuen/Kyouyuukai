@@ -1,0 +1,273 @@
+
+$cMainColor: #963763;
+$cSubColor: #eee;
+$cFontColor: #333;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic','Arial',sans-serif;
+    min-height: 100vh;
+    background-color: $cSubColor;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    & > a {
+        display: inline-block;
+        margin-left: 5%;
+        & img {
+            height: 40px;
+        }    
+    }
+    & .menu {
+        display: flex;
+        & li {
+            margin-right: 100px;
+            & a {
+                color: $cFontColor;
+                font-weight: 500;
+                display: block;
+                transition: all 0.3s;
+                &:hover {
+                    color: $cMainColor;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    margin-top: 150px;
+    & .container-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 60%;
+        & h3 {
+            font-size: 24px;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+        & p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+    }
+
+
+
+    & .container-body {
+        width: 90%;
+        margin: 100px auto;
+        display: flex;
+        flex-wrap: wrap;
+        & .contents {
+            width: 25%;
+            height: 250px;
+            padding: 20px 2% 0 0;
+
+            & a {
+                display: block;
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                border-radius: 6px;
+                box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.301);
+                transition: all 0.3s;
+
+                & .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 10px;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.418);
+                    border-radius: 6px;
+                    position: relative;
+                    & p {
+                        margin-top: 40px;
+                        margin-bottom: 30px;
+                        color: whitesmoke;
+                    }
+                    & h4 {
+                        color: whitesmoke;
+                        width: 80%;
+                        text-align: center;
+                    }
+                    & h6 {
+                        color: whitesmoke;
+                        font-size: 14px;
+                        width: 70%;
+                        height: 100%;
+                        text-align: center;
+                        position: absolute;
+                        top: 180px;
+                        font-weight: 500;
+                    }    
+                    & .many {
+                        font-size: 14px;
+                    }
+                }
+                &:hover {
+                    opacity: 0.7;
+                    box-shadow: none;
+                }
+            }
+            & .pictogram {
+                background-image: url(/image/symbiosis/pictogram.webp);
+            }
+            & .children {
+                background-image: url(/image/symbiosis/children.webp);
+            }
+            & .refugee {
+                background-image: url(/image/symbiosis/refugee.jpg);
+            }
+            & .staining {
+                background-image: url(/image/symbiosis/staining.jpg);
+            }
+            & .communication {
+                background-image: url(/image/symbiosis/rules.webp);
+            }
+            & .campus {
+                background-image: url(/image/symbiosis/campus.webp);
+            }   
+            & .yen {
+                background-image: url(/image/symbiosis/100yen.webp);
+            }
+            & .oldperson {
+                background-image: url(/image/symbiosis/oldperson.jpg);
+            }
+            & .war {
+                background-image: url(/image/symbiosis/war.webp);
+            }
+            & .artist {
+                background-image: url(/image/symbiosis/art.webp);
+            }
+            & .peace {
+                background-image: url(/image/symbiosis/peaceword.jpg);
+            }
+            & .WATS {
+                background-image: url(/image/learning.jpg);
+            }
+            & .SDGs {
+                background-image: url(/image/symbiosis/SDGs.jpg);
+            }
+            & .gender {
+                background-image: url(/image/symbiosis/gender.jpg);
+            }
+            & .olympism {
+                background-image: url(/image/symbiosis/olympism.jpg);
+            }
+
+        }
+
+    }
+
+
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 200px auto 0;
+    padding: 100px 0;
+    background-color: white;
+    & table {
+        width: 80%;
+        border-collapse: collapse;
+        & th, td {
+            border: 1px solid #333;
+            text-align: center;
+            padding: 10px 20px;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    & img {
+        display: inline-block;
+        margin-right: 50px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        & .menu {
+            & li {
+                margin-right: 50px;
+                & a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }    
+}
+@media screen and (max-width: 950px) {
+    .header {
+        & > a {
+            margin-left: 2%;
+            & img {
+                height: 30px;
+            }
+        }
+        & .menu {
+            & li {
+                margin-right: 20px; 
+            }
+        }    
+    }    
+    .container {
+        & .container-body {
+            & .contents {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        & > a {
+            margin-left: 5%;
+            & img {
+                height: 40px;
+            }
+        }
+        & .menu {
+            display: none;
+        }
+    }    
+    .container {
+        & .container-head {
+            width: 90%;
+        }
+        & .container-body {
+            & .contents {
+                width: 100%;
+            }
+        }
+    }
+}

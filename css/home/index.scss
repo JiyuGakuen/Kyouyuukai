@@ -1,0 +1,326 @@
+
+$cMainColor: #963763;
+$cSubColor: #eee;
+$cFontColor: #333;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic','Arial',sans-serif;
+    min-height: 100vh;
+    background-color: $cSubColor;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    & > a {
+        display: inline-block;
+        margin-left: 5%;
+        & img {
+            height: 40px;
+        }    
+    }
+    & .menu {
+        display: flex;
+        & li {
+            margin-right: 100px;
+            & a {
+                color: $cFontColor;
+                font-weight: 500;
+                display: inline-block;
+                transition: all 0.3s;
+                &:hover {
+                    color: $cMainColor;
+                }
+            }
+        }
+    }
+}
+
+.title-wrapper {
+    margin: 100px 0;
+    background-image: url(/image/scene/scene2.jpg);
+    background-size: cover;
+    height: 700px;
+    & .title {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.8;
+        & h1 {
+            color: white;
+            font-size: 32px;
+            letter-spacing: 4px;
+            margin-bottom: 50px;
+        }
+        & .title-link {
+            & a {
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                border: 2px solid black;
+                background-color: black;
+                padding: 20px 45px;
+                margin: 0 20px;
+                transition: all 0.3s;
+                &:hover {
+                    color: $cMainColor;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    & .toVisitor {
+        margin: 200px 0;
+        & h2 {
+            font-size: 28px;
+            letter-spacing: 4px;
+            text-align: center;
+            background-color: white;
+            padding: 10px 0;
+            margin-bottom: 50px;
+            color: $cFontColor;
+        }
+        & .map {
+            display: flex;
+            align-items: center;
+            & img {
+                width: 50%;
+                
+            }    
+            & .text {
+                margin-left: 50px;
+                height: 100%;
+                & p {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+        & .Visitorlink {
+            text-align: center;
+            margin-top: 50px;
+            & a {
+                display: block;
+                font-size: 18px;
+                font-weight: 700;
+                border: 2px solid $cFontColor;
+                color: $cFontColor;
+                background-color: white;
+                padding: 20px 0;
+                box-shadow: 5px 5px 0 0 $cFontColor;
+                transition: all 0.3s;
+                &:hover {
+                    box-shadow: none;
+                    transform: translate(2.5px, 2.5px);
+                }
+            }
+
+        }
+        & .Onlinelink {
+            text-align: center;
+            margin-top: 50px;
+            & a {
+                display: block;
+                font-size: 18px;
+                font-weight: 700;
+                border: 2px solid $cMainColor;
+                color: white;
+                background-color: $cMainColor;
+                padding: 20px 0;
+                transition: all 0.3s;
+                &:hover {
+                    color: $cMainColor;
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    & .schedule-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 50px;
+        & .schedule {
+            padding: 20px 40px;
+            height: 200px;
+            background-color: white;
+            & h3 {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            & p {
+                margin-bottom: 5px;
+            }
+        }        
+    }
+    & .program {
+        text-align: center;
+        margin-bottom: 200px;
+        & a {
+            display: inline-block;
+            color: black;
+            border: 2px solid ;
+            padding: 20px 50px;
+        }
+    }
+    & .InterView {
+        & h2 {
+            font-size: 28px;
+            border-bottom: 2px solid $cFontColor;
+            &::after {
+                content: "今年度の共生学や探求での学びを振り返ってもらいました...";
+                font-size: 16px;
+                margin-left: 30px;
+            }
+        }
+        & .InterViewlink {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+            & a {
+                font-size: 18px;
+                font-weight: 700;
+                color: white;
+                background-color: black;
+                border: 4px solid black;
+                padding: 30px 60px;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    & img {
+        display: inline-block;
+        margin-right: 50px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .header {
+        & .menu {
+            & li {
+                margin-right: 50px;
+                & a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .container {
+        & .explanation {
+            & .building {
+                width: 50%;
+                padding: 0;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 950px) {
+    .header {
+        & > a {
+            margin-left: 2%;
+            & img {
+                height: 30px;
+            }
+        }
+        & .menu {
+            & li {
+                margin-right: 20px; 
+            }
+        }    
+    }
+    .container {
+        width: 100%;
+        & .building {
+            margin: 50px 0 0;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        & > a {
+            margin-left: 5%;
+            & img {
+                height: 40px;
+            }
+        }
+        & .menu {
+            display: none;
+        }
+    }
+    
+    .container {
+        & .toVisitor {
+            & .map {
+                display: flex;
+                flex-direction: column;
+                & img {
+                    width: 100%;
+                }
+                & .text {
+                    margin: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title-wrapper {
+        & .title-link {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

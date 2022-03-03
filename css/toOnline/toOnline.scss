@@ -1,0 +1,170 @@
+
+$cMainColor: #963763;
+$cSubColor: #eee;
+$cFontColor: #333;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic','Arial',sans-serif;
+    min-height: 100vh;
+    background-color: $cSubColor;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    & > a {
+        display: inline-block;
+        margin-left: 5%;
+        & img {
+            height: 40px;
+        }    
+    }
+    & .menu {
+        display: flex;
+        & li {
+            margin-right: 100px;
+            & a {
+                color: $cFontColor;
+                font-weight: 500;
+                display: inline-block;
+                transition: all 0.3s;
+                &:hover {
+                    color: $cMainColor;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 150px auto;
+    & > h2 {
+        text-align: center;
+    }
+    & > p {
+        text-align: center;
+    }
+    & .url {
+        margin-top: 100px;
+        & div {
+            margin-top: 50px;
+            background-color: white;
+            padding: 10px 20px;
+            & h2 {
+                margin-bottom: 30px;
+            }
+            & p {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    & img {
+        display: inline-block;
+        margin-right: 50px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .header {
+        & .menu {
+            & li {
+                margin-right: 50px;
+                & a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .container {
+        & .explanation {
+            & .building {
+                width: 50%;
+                padding: 0;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 950px) {
+    .header {
+        & > a {
+            margin-left: 2%;
+            & img {
+                height: 30px;
+            }
+        }
+        & .menu {
+            & li {
+                margin-right: 20px; 
+            }
+        }    
+    }
+    .container {
+        width: 100%;
+        & .building {
+            margin: 50px 0 0;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        & > a {
+            margin-left: 5%;
+            & img {
+                height: 40px;
+            }
+        }
+        & .menu {
+            display: none;
+        }
+    }
+    
+    .container {
+        & .toVisitor {
+            & .map {
+                display: flex;
+                flex-direction: column;
+                & img {
+                    width: 100%;
+                }
+                & .text {
+                    margin: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+

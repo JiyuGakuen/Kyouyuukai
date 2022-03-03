@@ -1,0 +1,382 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic','Arial',sans-serif;
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header > a {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.header > a img {
+  height: 40px;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .menu li {
+  margin-right: 100px;
+}
+
+.header .menu li a {
+  color: #333;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header .menu li a:hover {
+  color: #963763;
+}
+
+.title-wrapper {
+  margin: 100px 0;
+  background-image: url(/image/scene/scene2.jpg);
+  background-size: cover;
+  height: 700px;
+}
+
+.title-wrapper .title {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+
+.title-wrapper .title h1 {
+  color: white;
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+
+.title-wrapper .title .title-link a {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 2px solid black;
+  background-color: black;
+  padding: 20px 45px;
+  margin: 0 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.title-wrapper .title .title-link a:hover {
+  color: #963763;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .toVisitor {
+  margin: 200px 0;
+}
+
+.container .toVisitor h2 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  text-align: center;
+  background-color: white;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.container .toVisitor .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .toVisitor .map img {
+  width: 50%;
+}
+
+.container .toVisitor .map .text {
+  margin-left: 50px;
+  height: 100%;
+}
+
+.container .toVisitor .map .text p {
+  margin-bottom: 2px;
+}
+
+.container .toVisitor .Visitorlink {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container .toVisitor .Visitorlink a {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #333;
+  color: #333;
+  background-color: white;
+  padding: 20px 0;
+  -webkit-box-shadow: 5px 5px 0 0 #333;
+          box-shadow: 5px 5px 0 0 #333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container .toVisitor .Visitorlink a:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(2.5px, 2.5px);
+          transform: translate(2.5px, 2.5px);
+}
+
+.container .toVisitor .Onlinelink {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container .toVisitor .Onlinelink a {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #963763;
+  color: white;
+  background-color: #963763;
+  padding: 20px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container .toVisitor .Onlinelink a:hover {
+  color: #963763;
+  background-color: white;
+}
+
+.container .schedule-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 50px;
+}
+
+.container .schedule-wrapper .schedule {
+  padding: 20px 40px;
+  height: 200px;
+  background-color: white;
+}
+
+.container .schedule-wrapper .schedule h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container .schedule-wrapper .schedule p {
+  margin-bottom: 5px;
+}
+
+.container .program {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.container .program a {
+  display: inline-block;
+  color: black;
+  border: 2px solid;
+  padding: 20px 50px;
+}
+
+.container .InterView h2 {
+  font-size: 28px;
+  border-bottom: 2px solid #333;
+}
+
+.container .InterView h2::after {
+  content: "今年度の共生学や探求での学びを振り返ってもらいました...";
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.container .InterView .InterViewlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 100px;
+}
+
+.container .InterView .InterViewlink a {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  border: 4px solid black;
+  padding: 30px 60px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container .InterView .InterViewlink a:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px 0;
+}
+
+footer img {
+  display: inline-block;
+  margin-right: 50px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .menu li {
+    margin-right: 50px;
+  }
+  .header .menu li a {
+    font-size: 14px;
+  }
+  .container .explanation .building {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header > a {
+    margin-left: 2%;
+  }
+  .header > a img {
+    height: 30px;
+  }
+  .header .menu li {
+    margin-right: 20px;
+  }
+  .container {
+    width: 100%;
+  }
+  .container .building {
+    margin: 50px 0 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header > a {
+    margin-left: 5%;
+  }
+  .header > a img {
+    height: 40px;
+  }
+  .header .menu {
+    display: none;
+  }
+  .container .toVisitor .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .toVisitor .map img {
+    width: 100%;
+  }
+  .container .toVisitor .map .text {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title-wrapper .title-link {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .title-wrapper .title-link a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=index.css.map */

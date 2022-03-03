@@ -1,0 +1,178 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic','Arial',sans-serif;
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header > a {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.header > a img {
+  height: 40px;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .menu li {
+  margin-right: 100px;
+}
+
+.header .menu li a {
+  color: #333;
+  font-weight: 500;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header .menu li a:hover {
+  color: #963763;
+}
+
+.container {
+  width: 70%;
+  margin: 150px auto 0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.container .container-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.container .container-wrapper h2 {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.container .container-wrapper h4 {
+  margin-bottom: 50px;
+}
+
+.container .container-wrapper .introduce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.container .container-wrapper .introduce img {
+  width: 60%;
+}
+
+.container .container-wrapper .introduce .text {
+  margin-left: 30px;
+}
+
+.container .container-wrapper .introduce .text h4 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.container .container-wrapper .introduce .text p {
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.container .container-wrapper .answer {
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+footer img {
+  display: inline-block;
+  margin-right: 50px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .menu li {
+    margin-right: 50px;
+  }
+  .header .menu li a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header > a {
+    margin-left: 2%;
+  }
+  .header > a img {
+    height: 30px;
+  }
+  .header .menu li {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header > a {
+    margin-left: 5%;
+  }
+  .header > a img {
+    height: 40px;
+  }
+  .header .menu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=interview.css.map */
