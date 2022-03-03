@@ -202,42 +202,6 @@ body {
   background-color: white;
 }
 
-.container .schedule-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 50px;
-}
-
-.container .schedule-wrapper .schedule {
-  padding: 20px 40px;
-  height: 200px;
-  background-color: white;
-}
-
-.container .schedule-wrapper .schedule h3 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.container .schedule-wrapper .schedule p {
-  margin-bottom: 5px;
-}
-
-.container .program {
-  text-align: center;
-  margin-bottom: 200px;
-}
-
-.container .program a {
-  display: inline-block;
-  color: black;
-  border: 2px solid;
-  padding: 20px 50px;
-}
 
 .container .InterView h2 {
   font-size: 28px;
