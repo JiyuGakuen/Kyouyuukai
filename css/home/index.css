@@ -117,6 +117,22 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+.container .Guidelines {
+  width: 90%;
+  margin: 0 auto 50px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.container .Guidelines h4 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.container .Guidelines p {
+  margin-bottom: 5px;
+}
 
 .container .toVisitor {
   margin: 200px 0;
