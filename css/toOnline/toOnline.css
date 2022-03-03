@@ -63,7 +63,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 60%;
   margin: 150px auto;
 }
 
@@ -85,11 +85,11 @@ body {
 }
 
 .container .url {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .container .url div {
-  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: white;
   padding: 10px 20px;
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .container .url div p {
-  font-size: 18px;
+  font-weight: 700;
 }
 
 .container .url div h4 {
