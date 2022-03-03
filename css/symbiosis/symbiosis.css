@@ -208,7 +208,7 @@ body {
 }
 
 .container .container-body .contents .artist {
-  background-image: urlhttps://raw.githubusercontent.com/JiyuGakuen/Kyouyuukai/main/image/symbiosis/art.webp);
+  background-image: url(https://raw.githubusercontent.com/JiyuGakuen/Kyouyuukai/main/image/symbiosis/art.webp);
 }
 
 .container .container-body .contents .peace {
