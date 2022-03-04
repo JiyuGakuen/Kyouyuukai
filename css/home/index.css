@@ -262,6 +262,7 @@ body {
 .container .Program .place
 
 .container .Program .place h4 {
+  margin-bottom: 30px;  
   border-bottom: 2px solid #963763;
 }
 
