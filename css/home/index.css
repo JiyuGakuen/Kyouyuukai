@@ -265,6 +265,12 @@ body {
   border-bottom: 2px solid #963763;
 }
 
+.container .Program .place h4::after {
+  margin-left: 20px;
+  content: "左のリンクから各会場のZoomに参加できます";
+  font-size: 14px;
+}
+
 .container .Program .place .timeschedule table tr td {
   padding: 20px 10px;
   font-size: 14px;
