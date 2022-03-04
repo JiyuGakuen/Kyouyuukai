@@ -162,6 +162,26 @@ footer img {
   .header .menu li {
     margin-right: 20px;
   }
+  .container {
+    width: 90%;
+  }
+  .container .container-wrapper {
+    width: 90%;
+  }
+  .container .container-wrapper .introduce {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .container-wrapper .introduce img {
+    width: 100%;
+  }
+  .container .container-wrapper .introduce .text {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 800px) {
