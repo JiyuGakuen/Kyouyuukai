@@ -153,5 +153,8 @@ footer img {
   .header .menu {
     display: none;
   }
+  .container .table-wrapper table th, .container .table-wrapper table td {
+    font-size: 8px;
+  }
 }
 /*# sourceMappingURL=Sakai.css.map */
