@@ -90,7 +90,7 @@ p a:hover {
 }
 
 .container h2::after {
-  content: "at.女子部体操館";
+  content: "at.男子部体操館";
   margin-left: 50px;
 }
 
