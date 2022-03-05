@@ -277,6 +277,13 @@ body {
   text-align: center;
 }
 
+.container .Program .place .timeschedule table .cancel {
+  text-decoration: line-through;
+
+
+}
+
+
 
 .container .InterView h2 {
   font-size: 28px;
