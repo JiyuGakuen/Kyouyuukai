@@ -90,7 +90,7 @@ p a:hover {
 }
 
 .container h2::after {
-  content: "at.女子部情報室";
+  content: "at.女子部小食堂";
   margin-left: 50px;
 }
 
